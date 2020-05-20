@@ -706,6 +706,7 @@ export default class extends Component {
 
     return (
       <TouchableOpacity
+        hitSlop={{top: 20, left: 7, bottom: 20, right: 20}}
         onPress={() => button !== null && this.scrollBy(1)}
         disabled={this.props.disableNextButton}
       >
@@ -723,6 +724,7 @@ export default class extends Component {
 
     return (
       <TouchableOpacity
+        hitSlop={{top: 20, left: 20, bottom: 20, right: 7}}
         onPress={() => button !== null && this.scrollBy(-1)}
         disabled={this.props.disablePrevButton}
       >
